@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+      .glass__projects{
+        display:none;
+      }
+    </style>
+    <script>
+     function fun(){
+      
+       var elems = document.getElementsByClassName('glass');
+for (var i=0;i<elems.length;i+=1){
+  elems[i].style.display = 'none';
+}
+var elems1 = document.getElementsByClassName('glass__projects');
+for (var i=0;i<elems.length;i+=1){
+  elems1[i].style.display = 'block';
+}  
+     }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Logeshwaran Portfolio</title>
+</head>
+
+<body>
+    <main>
+      
+        <section class="glass">
+            <div class="profile">
+                <div class="user">
+                    <img src="pp.jpg" alt="" class="profile__pic">
+                    <h3>Logeshwaran</h3>
+                    <br>
+                    <h4>Full Stack Web Developer</h4>
+                </div>
+                <div class="links">
+                    <div class="link">
+
+                        <a href="#" class="fa fa-facebook"></a>
+                        <h2>see</h2>
+
+                    </div>
+                    <div class="link">
+                        <a href="#" class="fa fa-google"></a>
+                        <h2>see</h2>
+
+                    </div>
+                    <div class="link">
+                        <a href="#" class="fa fa-twitter"></a>
+
+                        <h2>see</h2>
+                    </div>
+                    <div class="link">
+
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <h2>see</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="about">
+                <div class="navbar">
+                    <ul>
+                        <li>Home</li>
+                        <li onclick="document.location='skills.html'">Skills</li>
+                        <li onclick="document.location='education.html'">Education</li>
+                        <li onclick="document.location='contact.html'">Contact</li>
+                        <li onclick="document.location='projects.html'">Project</li>
+                    </ul>
+                </div>
+        
+                <div class="line"></div>
+                <div class="status">
+                    <h1>Hey there !</h1>
+                    <br>
+                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, in ad quis, eligendi laborum beatae voluptatibus molestiae sapiente eum aspernatur adipisci, sint cumque quibusdam neque fuga repudiandae? Eius, sapiente ab?</h3>
+                    <button class="resume__btn">See My Resume</button>
+                </div>
+                <br><br>
+                
+                
+            </div>
+           
+        </section>
+       
+        
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </main>
+</body>
+
+</html>
