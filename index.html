@@ -6,24 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <style>
-      
-      .glass__projects{
-        display:none;
-      }
-    </style>
     <script>
      function fun(){
-      
-       var elems = document.getElementsByClassName('glass');
+       var elems = document.getElementById('navbar');
 for (var i=0;i<elems.length;i+=1){
   elems[i].style.display = 'none';
 }
-var elems1 = document.getElementsByClassName('glass__projects');
-for (var i=0;i<elems.length;i+=1){
-  elems1[i].style.display = 'block';
+
 }  
-     }
+    
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -31,12 +22,12 @@ for (var i=0;i<elems.length;i+=1){
 </head>
 
 <body>
-    <main>
+    <main id="main">
       
         <section class="glass">
             <div class="profile">
                 <div class="user">
-                    <img src="pp.jpg" alt="" class="profile__pic">
+                    <img src="pp.jpg" alt="" class="profile__pic" onclick="fun()">
                     <h3>Logeshwaran</h3>
                     <br>
                     <h4>Full Stack Web Developer</h4>
