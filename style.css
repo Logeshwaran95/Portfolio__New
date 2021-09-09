@@ -160,7 +160,7 @@ main {
   text-align: center;
   position: relative;
   padding: 6rem;
-  transition: transform 2s;
+  transition: transform 1s;
   transform-style: preserve-3d;
   color: white;
   border-radius: 2rem;
@@ -188,19 +188,19 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.project__1{
+.project__1 {
   background: url(./landing.jpg);
 }
-.project__2{
+.project__2 {
   background: url(./shopping-cart.jpg);
 }
-.project__3{
+.project__3 {
   background: url(./calculator.jpg);
 }
-.project__4{
+.project__4 {
   background: url(./landing.jpg);
 }
-.project__5{
+.project__5 {
   background: url(./landing.jpg);
 }
 .card__back {
@@ -288,18 +288,71 @@ li:hover {
   transition: 0.6s;
   width: 110px;
 }
-.go__home__btn{
-  margin-top:130px;
-  height:35px;
-  width:130px;
-  border:none;
+.go__home__btn {
+  margin-top: 130px;
+  height: 35px;
+  width: 130px;
+  border: none;
   border-radius: 1rem;
   text-transform: uppercase;
   font-weight: 700;
   box-shadow: 1px 2px 30px rgb(173, 173, 173);
   transition: 0.6s;
 }
-.go__home__btn:hover{
-  width:180px;
+.go__home__btn:hover {
+  width: 180px;
   transition: 0.6s;
+}
+@media screen and (max-width: 1070px) {
+  .circle1 {
+    display: none;
+  }
+  .circle2 {
+    display: none;
+  }
+
+  .glass {
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 90vh;
+    width: 95vw;
+  }
+  .profile__pic {
+    height: 95px;
+    margin-top: 0.6rem;
+  }
+  .fa {
+    height: 60px;
+  }
+  .profile {
+    font-size: 1rem;
+    flex-direction: column;
+  }
+  .links {
+    flex-direction: row;
+  }
+
+  .about {
+    font-size: 12px;
+    margin-top: 1rem;
+  }
+  .navbar {
+    margin-top: 1rem;
+    height: 30px;
+    font-size:.9rem;
+    font-weight: 800;
+  }
+  li {
+    width: 40px;
+    line-height: 25px;
+    height: 28px;
+  }
+  .line{
+    margin-top:1rem;
+  }
+  li:hover {
+    width: 60px;
+  }
+
+ 
 }
