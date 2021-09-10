@@ -87,11 +87,10 @@
       height: 40px
     }
 
+
     #btn__send:hover {
       width: 200px;
       transition: 0.5s;
-      background-image: linear-gradient(to right, #f2709c, #ff9472);
-      color: white;
     }
 
     @media screen and (max-width: 1070px) {
@@ -126,11 +125,15 @@
       }
     }
   </style>
-
+<script>
+  function fun1(){
+      document.getElementById("main").style.background=localStorage.bgcolor;
+  }
+</script>
 </head>
 
-<body>
-  <main>
+<body onload="fun1()">
+  <main id="main">
     <section class="glass__contact">
       <br>
       <center>

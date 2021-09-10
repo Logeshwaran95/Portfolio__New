@@ -48,11 +48,15 @@
       }
     }
   </style>
-
+<script>
+  function fun1(){
+      document.getElementById("main").style.background=localStorage.bgcolor;
+  }
+</script>
 </head>
 
-<body>
-  <main>
+<body onload="fun1()">
+  <main id="main">
     <section class="glass__projects">
       <center>
         <h1>Projects</h1>

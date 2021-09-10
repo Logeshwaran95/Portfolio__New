@@ -86,21 +86,6 @@
             }
         }
 
-        .html {
-            width: 95%;
-            animation: html 3s;
-        }
-
-        @keyframes html {
-            from {
-                width: 0%;
-            }
-
-            to {
-                width: 95%;
-            }
-        }
-
         .css {
             width: 85%;
             animation: css 3s;
@@ -170,11 +155,22 @@
             }
         }
     </style>
-
+<script>
+    function fun1(){
+        document.getElementById("main").style.background=localStorage.bgcolor;
+        
+        var a =["html__skills","css__skills","js__skills","react__skills"];
+       
+        for(var i=0;i<4;i++){
+        document.getElementById(a[i]).style.background=localStorage.bgcolor;
+        }
+        
+    }
+</script>
 </head>
 
-<body>
-    <main>
+<body onload="fun1()">
+    <main id="main">
         <section class="glass__skills">
             <center>
                 <h2>SKILLS</h2>
@@ -183,24 +179,23 @@
                 <br>
                 <p>HTML5</p>
                 <div class="container">
-                    <div class="skills html">95%</div>
+                    <div class="skills html" id="html__skills">95%</div>
                 </div>
                 <p>CSS</p>
                 <div class="container">
-                    <div class="skills css">85%</div>
+                    <div class="skills css" id="css__skills">85%</div>
                 </div>
                 <p>JavaScript</p>
                 <div class="container">
-                    <div class="skills js">70%</div>
+                    <div class="skills js" id="js__skills">70%</div>
                 </div>
                 <p>React Js</p>
                 <div class="container">
-                    <div class="skills react">65%</div>
+                    <div class="skills react" id="react__skills">65%</div>
                 </div>
                 <center><button onclick="document.location='index.html'" class="go__home__btn">Go Home</button></center>
 
             </div>
-
         </section>
 
 

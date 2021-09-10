@@ -12,7 +12,7 @@
     <title>Logeshwaran Portfolio</title>
 </head>
 
-<body>
+<body onload="def()">
     <main id="main">
 
         <section class="glass">
@@ -67,7 +67,12 @@
                     <button class="resume__btn">See My Resume</button>
                 </div>
                 <br><br>
-
+                <div class="color__toggle">
+                <button onclick="fundef()" class="toggler" style="background:linear-gradient(to right, #f2709c, #ff9472) "></button>
+                <button onclick="funred()" class="toggler" style="background:linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%)"></button>
+                <button onclick="funblue()" class="toggler" style="background:linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)"></button>
+                <button onclick="fungreen()" class="toggler" style="background:linear-gradient( 68.3deg,  rgba(245,177,97,1) 0.4%, rgba(236,54,110,1) 100.2% )"></button>
+            </div>
 
             </div>
 
@@ -78,5 +83,30 @@
         <div class="circle2"></div>
     </main>
 </body>
+<script> 
+function def(){
+    document.getElementById("main").style.background=localStorage.bgcolor;
+}
+     function fundef(){
+        document.getElementById("main").style.background="linear-gradient(to right, #f2709c, #ff9472)";
+         var bgcolor=  document.getElementById("main").style.background;
+         localStorage.bgcolor = bgcolor;
+     }
+     function funred(){
+        document.getElementById("main").style.background="linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%)";
+         var bgcolor=  document.getElementById("main").style.background;
+         localStorage.bgcolor = bgcolor;
+     }
+     function funblue(){
+        document.getElementById("main").style.background=" linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)";
+         var bgcolor=  document.getElementById("main").style.background;
+         localStorage.bgcolor = bgcolor;
+     }
+     function fungreen(){
+        document.getElementById("main").style.background="linear-gradient( 68.3deg,  rgba(245,177,97,1) 0.4%, rgba(236,54,110,1) 100.2% )";
+         var bgcolor=  document.getElementById("main").style.background;
+         localStorage.bgcolor = bgcolor;
+     }
+</script>
 
 </html>

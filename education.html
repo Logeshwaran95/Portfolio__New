@@ -47,7 +47,7 @@
         }
 
         .exp-box h3 {
-            color: #f8523c;
+            color: #000000;
             font-weight: 800;
             font-size: 1.4rem;
         }
@@ -84,11 +84,15 @@
 
         }
     </style>
-
+<script>
+    function fun1(){
+        document.getElementById("main").style.background=localStorage.bgcolor;
+    }
+</script>
 </head>
 
-<body>
-    <main>
+<body onload="fun1()">
+    <main id="main">
         <section class="glass__education">
             <center>
                 <h1>EDUCATION</h1>
