@@ -155,18 +155,18 @@
             }
         }
     </style>
-<script>
-    function fun1(){
-        document.getElementById("main").style.background=localStorage.bgcolor;
-        
-        var a =["html__skills","css__skills","js__skills","react__skills"];
-       
-        for(var i=0;i<4;i++){
-        document.getElementById(a[i]).style.background=localStorage.bgcolor;
+    <script>
+        function fun1() {
+            document.getElementById("main").style.background = localStorage.bgcolor;
+
+            var a = ["html__skills", "css__skills", "js__skills", "react__skills"];
+
+            for (var i = 0; i < 4; i++) {
+                document.getElementById(a[i]).style.background = localStorage.bgcolor;
+            }
+
         }
-        
-    }
-</script>
+    </script>
 </head>
 
 <body onload="fun1()">
