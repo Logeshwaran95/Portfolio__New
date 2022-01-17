@@ -49,8 +49,7 @@ main {
   border-radius: 2rem;
 }
 .circle1,
-.circle2,
-.circle3 {
+.circle2 {
   background: white;
   position: absolute;
   background: linear-gradient(
