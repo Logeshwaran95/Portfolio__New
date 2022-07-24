@@ -12,7 +12,7 @@
 
 * Website: https://logeshwaran-portfolio-logeshwaran95.vercel.app/
 * Github: [@Logeshwaran95](https://github.com/Logeshwaran95)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/logeshwaran-\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/logeshwaran-\/)
+* LinkedIn: [@logeshwaran](https://linkedin.com/in/logeshwaran-\/)
 
 ## Show your support
 
